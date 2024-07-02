@@ -50,7 +50,7 @@ public class CartApiController : ControllerBase
     /// <summary>
     /// Add items to cart.
     /// </summary>
-    /// <param name="model">Product information has been added to the cart. </param>
+    /// <param name="model">Product information has been added to the cart </param>
     /// <returns>Update cart content. </returns>
     [HttpPost("add-item")]
     public async Task<Result> AddToCart([FromBody] AddToCartParam model)
