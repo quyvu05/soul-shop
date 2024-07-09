@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Shop.Module.Core.Entities;
 
 /// <summary>
-/// 州/省、市、区、街道
+/// State/province, city, district, street
 /// </summary>
 public class StateOrProvince : EntityBase
 {

@@ -8,7 +8,7 @@ public class AccountResult
     public string UserName { get; set; }
 
     /// <summary>
-    /// 全名（昵称）
+    /// Full name (nickname)
     /// </summary>
     public string FullName { get; set; }
 

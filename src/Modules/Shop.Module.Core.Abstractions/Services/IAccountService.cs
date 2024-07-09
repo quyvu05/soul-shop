@@ -7,7 +7,7 @@ namespace Shop.Module.Core.Services;
 public interface IAccountService
 {
     /// <summary>
-    /// 验证并获取最后一条验证码
+    /// Verify and get the last verification code
     /// </summary>
     /// <param name="phone"></param>
     /// <param name="captcha"></param>

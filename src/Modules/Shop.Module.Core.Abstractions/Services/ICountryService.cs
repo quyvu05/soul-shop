@@ -15,7 +15,7 @@ public interface ICountryService
     IList<ProvinceTreeResult> ProvinceTree(IList<StateOrProvinceDto> list, int? parentId = null);
 
     /// <summary>
-    /// 省市区 例：8 转换为 ['1', '6', '8']
+    /// Province and city Example: 8 converted to ['1', '6', '8']
     /// </summary>
     /// <param name="provinces"></param>
     /// <param name="stateOrProvinceId"></param>

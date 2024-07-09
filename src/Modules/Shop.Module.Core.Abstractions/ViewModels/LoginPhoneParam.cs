@@ -5,10 +5,10 @@ namespace Shop.Module.Core.ViewModels;
 public class LoginPhoneParam
 {
     [Required]
-    [RegularExpression(@"^\d{11}$", ErrorMessage = "手机号格式错误")]
+    [RegularExpression(@"^\d{11}$", ErrorMessage = "Malformed phone number")]
     public string Phone { get; set; }
 
-    [Required(ErrorMessage = "请输入验证码")] public string Code { get; set; }
+    [Required(ErrorMessage = "Please enter verification code")] public string Code { get; set; }
 
     public bool RememberMe { get; set; }
 }

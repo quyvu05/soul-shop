@@ -1,28 +1,28 @@
 ﻿namespace Shop.Module.Hangfire.Models;
 
 /// <summary>
-/// Hangfire 作业配置
+/// Hangfire Job configuration
 /// </summary>
 public class HangfireOptions
 {
     /// <summary>
-    /// 是否启用 Redis，如果未启用，则默认为内存模式
+    /// Whether to enable Redis, if not enabled, the default is memory mode
     /// </summary>
     public bool RedisEnabled { get; set; }
 
     /// <summary>
-    /// Redis 连接字符串
+    /// Redis Connection string
     /// <see cref=""/>
     /// </summary>
     public string RedisConnection { get; set; }
 
     /// <summary>
-    /// 用户名
+    /// Username
     /// </summary>
     public string Username { get; set; }
 
     /// <summary>
-    /// 密码
+    /// Password
     /// </summary>
     public string Password { get; set; }
 }

@@ -18,7 +18,7 @@ public class User : IdentityUser<int>, IEntityWithTypedId<int>, IExtendableObjec
     public Guid UserGuid { get; set; }
 
     /// <summary>
-    /// 全名（昵称）
+    /// Full name (nickname)
     /// </summary>
     [Required]
     [StringLength(450)]
@@ -44,7 +44,7 @@ public class User : IdentityUser<int>, IEntityWithTypedId<int>, IExtendableObjec
     public string ExtensionData { get; set; }
 
     /// <summary>
-    /// 已启用
+    /// Activated
     /// </summary>
     public bool IsActive { get; set; }
 
@@ -71,7 +71,7 @@ public class User : IdentityUser<int>, IEntityWithTypedId<int>, IExtendableObjec
     [ForeignKey("AvatarId")] public Media Avatar { get; set; }
 
     /// <summary>
-    /// 管理员备注，仅内部使用
+    /// Administrator's note, internal use only
     /// </summary>
     [StringLength(450)]
     public string AdminRemark { get; set; }

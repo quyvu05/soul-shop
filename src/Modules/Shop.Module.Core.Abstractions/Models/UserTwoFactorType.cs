@@ -3,10 +3,10 @@
 namespace Shop.Module.Core.Models;
 
 /// <summary>
-/// 用户双因子验证类型
+/// Types of user two-factor authentication
 /// </summary>
 public enum UserTwoFactorType
 {
-    [Description("手机")] Phone = 0,
-    [Description("邮箱")] Email = 1
+    [Description("cell phone")] Phone = 0,
+    [Description("Mail")] Email = 1
 }

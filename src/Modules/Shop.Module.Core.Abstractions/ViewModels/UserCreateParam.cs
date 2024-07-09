@@ -6,22 +6,22 @@ namespace Shop.Module.Core.ViewModels;
 public class UserCreateParam
 {
     [Required]
-    [RegularExpression(@"(\w[-\w.?]*@?[-\w.?]*){4,64}", ErrorMessage = "用户名长度4-64字符，只能由“字母、数字、特殊字符（._-@）”组合")]
+    [RegularExpression(@"(\w[-\w.?]*@?[-\w.?]*){4,64}", ErrorMessage = "The username is 4-64 characters long and can only be composed of \"letters, numbers, and special characters (._-@)\"")]
     public string UserName { get; set; }
 
     [Required] public string FullName { get; set; }
 
     [EmailAddress] public string Email { get; set; }
 
-    [RegularExpression(@"[0-9-()（）]{4,32}", ErrorMessage = "手机号码格式不正确")]
+    [RegularExpression(@"[0-9-()（）]{4,32}", ErrorMessage = "Mobile phone number format is incorrect")]
     public string PhoneNumber { get; set; }
 
-    //[Required(ErrorMessage = "密码不能为空")]
-    //[StringLength(maximumLength: 32, MinimumLength = 6, ErrorMessage = "密码长度6-32字符")]
+    //[Required(ErrorMessage = "Password can not be blank")]
+    //[StringLength(maximumLength: 32, MinimumLength = 6, ErrorMessage = "Password length 6-32 characters")]
     public string Password { get; set; }
 
     /// <summary>
-    /// 已启用
+    /// Activated
     /// </summary>
     public bool IsActive { get; set; }
 

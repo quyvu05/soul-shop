@@ -16,7 +16,7 @@ public class UserQueryResult
     public string PhoneNumber { get; set; }
 
     /// <summary>
-    /// 已启用
+    /// Activated
     /// </summary>
     public bool IsActive { get; set; }
 
@@ -36,7 +36,7 @@ public class UserQueryResult
     public DateTime? LastActivityOn { get; set; }
 
     /// <summary>
-    /// 管理员备注，仅内部使用
+    /// Administrator's note, internal use only
     /// </summary>
     public string AdminRemark { get; set; }
 

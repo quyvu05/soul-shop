@@ -1,17 +1,17 @@
 ﻿namespace Shop.Module.Core.Models;
 
 /// <summary>
-/// 短信模板类型
+/// SMS template type
 /// </summary>
 public enum SmsTemplateType
 {
     /// <summary>
-    /// 验证码
+    /// Verification code
     /// </summary>
     Captcha = 0,
 
     /// <summary>
-    /// 短信通知
+    /// SMS notification
     /// </summary>
     Notification = 1
 }

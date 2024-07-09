@@ -15,7 +15,7 @@ public class EmailSend : EntityBase
     [Required] public string From { get; set; }
 
     /// <summary>
-    /// 接收
+    /// Take over
     /// </summary>
     public string To { get; set; }
 
@@ -30,24 +30,24 @@ public class EmailSend : EntityBase
     public bool IsHtml { get; set; }
 
     /// <summary>
-    /// 外部流水扩展字段。
+    /// External pipeline extension fields。
     /// </summary>
     [StringLength(450)]
     public string OutId { get; set; }
 
     /// <summary>
-    /// 发送回执ID。
+    /// Send receipt ID.
     /// </summary>
     [StringLength(450)]
     public string ReceiptId { get; set; }
 
     /// <summary>
-    /// 是否发送成功
+    /// Whether sent successfully
     /// </summary>
     public bool IsSucceed { get; set; }
 
     /// <summary>
-    /// 发送成功或失败的消息
+    /// Send success or failure message
     /// </summary>
     public string Message { get; set; }
 

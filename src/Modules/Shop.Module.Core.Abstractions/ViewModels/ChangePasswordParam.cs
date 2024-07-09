@@ -4,17 +4,17 @@ namespace Shop.Module.Core.ViewModels;
 
 public class ChangePasswordParam
 {
-    [Required(ErrorMessage = "请输入旧密码")]
+    [Required(ErrorMessage = "Please enter old password")]
     [DataType(DataType.Password)]
     [Display(Name = "Current password")]
     public string OldPassword { get; set; }
 
-    [Required(ErrorMessage = "请输入新密码")]
-    [StringLength(100, ErrorMessage = "密码长度6-32字符", MinimumLength = 6)]
+    [Required(ErrorMessage = "Please enter a new password")]
+    [StringLength(100, ErrorMessage = "Password length 6-32 characters", MinimumLength = 6)]
     [DataType(DataType.Password)]
     public string NewPassword { get; set; }
 
     [DataType(DataType.Password)]
-    [Compare("NewPassword", ErrorMessage = "两次输入的密码不匹配")]
+    [Compare("NewPassword", ErrorMessage = "The passwords entered twice do not match")]
     public string ConfirmPassword { get; set; }
 }

@@ -7,7 +7,7 @@ public class AddEmailPutParam
     [Required] public int UserId { get; set; }
 
     [Required]
-    [EmailAddress(ErrorMessage = "邮箱地址格式错误")]
+    [EmailAddress(ErrorMessage = "Email address format error")]
     public string Email { get; set; }
 
     [Required()] public string Code { get; set; }

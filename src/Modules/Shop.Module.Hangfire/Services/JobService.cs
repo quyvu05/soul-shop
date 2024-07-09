@@ -48,8 +48,8 @@ public class JobService : IJobService
     /// <returns></returns>
     public Task AddOrUpdate(string recurringJobId, Expression<Func<Task>> methodCall, Func<string> cronExpression)
     {
-        // RecurringJob.AddOrUpdate("Server monitoring", () => EmailSend(), Cron.Daily(1, 10)); //每天9:10
-        // 设置时区在多服务器运行时可能会报错
+        // RecurringJob.AddOrUpdate("Server monitoring", () => EmailSend(), Cron.Daily(1, 10)); //9:10 every day
+        // Setting the time zone may cause an error when running on multiple servers.
         RecurringJob.AddOrUpdate(recurringJobId, methodCall, cronExpression);
         return Task.CompletedTask;
     }

@@ -11,14 +11,14 @@ public class UserQueryParam
     public string Email { get; set; }
 
     /// <summary>
-    /// 已启用
+    /// Activated
     /// </summary>
     public bool? IsActive { get; set; }
 
     public string PhoneNumber { get; set; }
 
     /// <summary>
-    /// 联系方式，邮箱/电话
+    /// Contact information, email/phone
     /// </summary>
     public string Contact { get; set; }
 

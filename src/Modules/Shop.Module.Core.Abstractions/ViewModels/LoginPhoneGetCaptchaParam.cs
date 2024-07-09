@@ -5,6 +5,6 @@ namespace Shop.Module.Core.ViewModels;
 public class LoginPhoneGetCaptchaParam
 {
     [Required]
-    [RegularExpression(@"^\d{11}$", ErrorMessage = "手机号格式错误")]
+    [RegularExpression(@"^\d{11}$", ErrorMessage = "Malformed phone number")]
     public string Phone { get; set; }
 }

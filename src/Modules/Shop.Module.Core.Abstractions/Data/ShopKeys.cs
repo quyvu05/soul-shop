@@ -12,12 +12,12 @@ public class ShopKeys
     public static string Provinces = System + ":country:";
 
     /// <summary>
-    /// 访客用户默认密码
+    /// Guest user default password
     /// </summary>
     public const string GuestDefaultPassword = "123456";
 
     /// <summary>
-    /// 用户Cookie名称
+    /// User cookie name
     /// </summary>
     public const string UserGuidCookiesName = "ShopUserGuid";
 }
